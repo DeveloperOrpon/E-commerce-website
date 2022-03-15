@@ -5,9 +5,207 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-COMMERCE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container mt-4">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+              <form class="flex">
+                <input class="form-control ml-2 Search" type="search" placeholder="Search" aria-label="Search">
+                <i id="Search-icon" class="fa fa-search"></i>
+              </form>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ">
+                  <a class="nav-link" href="#">Home</a>
+                  <a class="nav-link" href="#Shoes">Shoes</a>
+                  <a class="nav-link" href="#backpack">BackPack</a>
+                  <a class="nav-link" href="#Contract">Contract Us</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <!-- carousel From Bootstrap -->
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide orage-bg" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-7">
+                        <h1>Mega LCD TV MI</h1>
+                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi facilis hic corrupti accusamus, distinctio aperiam.</P>
+                        <h1 class="price">1200$</h1>
+                        <button class="buynow" >BUY NOW</button>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-7">
+                        <h1>3D HEADPHONE FROM MI</h1>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laudantium, assumenda quibusdam debitis mollitia quisquam praesentium repellendus expedita fugiat blanditiis?</P>
+                        <h1 class="price">200$</h1>
+                        <button class="buynow" >BUY NOW</button>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-7">
+                        <h1>XBOX FROM MI</h1>
+                        <P>Repellendus provident quidem officia, commodi distinctio labore reiciendis blanditiis quibusdam odit vitae dolor praesentium dolorem dolorum est soluta tempore, laudantium quos voluptatum itaque perferendis dignissimos eveniet. Autem iste ea temporibus quidem eaque.</P>
+                        <h1 class="price">1100$</h1>
+                        <button class="buynow" >BUY NOW</button>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <div class="container categories">
+        <h4 class="mb-4">Categories</h4>
+        <div class="row ">
+            <div class="col-md-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center cat1">
+                    <h1>Bag</h1>
+                    <img src="images/categories/product1.png" alt="">   
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center cat2">
+                    <h1>Shoes</h1>
+                    <img src="images/categories/product2.png"></a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center cat3">
+                    <h1>Watch</h1>
+                    <img src="images/categories/watch.png" alt="">
+                </div>
+            </div>
+        </div> 
+    </div>
+   <div id="Shoes" class="product-details">
+    <div class="container ">
+        <h3>Shoes</h3>
+        <div class="d-flex justify-content-around card-deck row">
+            <div class="card col-md-3 d-flex justify-content-center align-items-center mb-3">
+              <img class="card-img-top" src="images/shoes/shoe-1.png" alt="Card image cap">
+              <div class="card-body ">
+                <h5 class="card-title">Reebok Dart Men’s Shoes</h5>
+                <p class="card-text">Some quick example text to build on the card title.</p>
+                <p class="card-text price">$999</p>
+                <BUtton class="btn buynow">Buy Now</BUtton>
+              </div>
+            </div>
+            <div class="card col-md-3 d-flex justify-content-center align-items-center mb-3">
+              <img class="card-img-top" src="images/shoes/shoe-2.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Reebok All Terrain</h5>
+                <p class="card-text">Some quick example text to build on the card title.</p>
+                <p class="card-text price">$99</p>
+                <BUtton class="btn buynow">Buy Now</BUtton>
+              </div>
+            </div>
+            <div class="card col-md-3 d-flex justify-content-center align-items-center mb-3">
+              <img class="card-img-top" src="images/shoes/shoe-3.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Reebok Pump</h5>
+                <p class="card-text">Some quick example text to build on the card title.</p>
+                <p class="card-text price">$799</p>
+                <BUtton class="buynow">Buy Now</BUtton>
+              </div>
+            </div>
+          </div>
+    </div>
     
+    <div class="container" id="backpack">
+        <h3>BackPack</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100 d-flex justify-content-center align-items-center">
+                <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title">Ison Backpack</h5>
+                  <h5 class="price">$120</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                    <BUtton class="btn buynow">Buy Now</BUtton>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 d-flex justify-content-center align-items-center">
+                <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Biaowang Backpack </h5>
+                  <h5 class="price">$90</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer">
+                    <BUtton class="btn buynow">Buy Now</BUtton>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 d-flex justify-content-center align-items-center">
+                <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dxyizu WS54 Smart </h5>
+                  <h5 class="price">$100</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="card-footer">
+                    <BUtton class="buynow">Buy Now</BUtton>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+   </div>
+   <div class="footer">
+       <div class="container footer-info orage-bg d-flex justify-content-around align-items-center">
+          <div class="col-md-4 ">
+                <h1>LET'S STAY IN</h1>
+                <p>Get updates on sales specials and more</p>
+                <div class="input-group mb-3">
+                 <input type="text" class="form-control subs rounded" placeholder="Enter Your Email">
+                <button class="btn buynow" type="button" id="button-addon1">Button</button>
+              </div>
+          </div>        
+       </div>
+   </div>
+   <div class="container">
+       <marquee behavior="left" direction="scroll"><h5>Development & Copyright By &#169Mofizol_Orpon </h5></marquee>
+   </div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
